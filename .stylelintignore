@@ -3,3 +3,4 @@ package-lock.json
 LICENSE
 README.md
 linters.yml
+.hinttrc
