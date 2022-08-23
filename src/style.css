@@ -43,7 +43,6 @@
 
 #refresh{
     border: none;
-    : #ffffff;
     height: 20px;
     width: 20%;
     text-align: center;
@@ -81,7 +80,6 @@ input {
 
 #submit {
     border: none;
-    : #ffffff;
     height: 20px;
     width: 20%;
     text-align: center;
