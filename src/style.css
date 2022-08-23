@@ -58,6 +58,7 @@
 .subtitle {
   font-size: 2rem;
   font-weight: 800;
+  padding-bottom: 30px;
 }
 
 #mainlist {
@@ -69,10 +70,6 @@
 #mainform > * {
   margin-bottom: 20px;
   height: 30px;
-}
-
-.subtitle {
-  padding-bottom: 30px;
 }
 
 input {
