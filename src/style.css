@@ -10,7 +10,6 @@
 }
 
 #maincontainer {
-    background-color: #de0000;
     display: flex;
     justify-content: space-around;
 }
@@ -18,7 +17,6 @@
 #mainform {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
 }
 
 #scores {
@@ -28,18 +26,15 @@
 }
 
 #inputscore {
-    background-color: #669860;
     width: 40%;
 }
 
 .containers {
-    background-color: #669860;
     width: 40%;
     padding: 30px;
 }
 
 #topscore {
-    background-color: #669860;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -48,7 +43,7 @@
 
 #refresh{
     border: none;
-    background-color: #ffffff;
+    : #ffffff;
     height: 20px;
     width: 20%;
     text-align: center;
@@ -66,7 +61,6 @@
 }
 
 #mainlist {
-    background-color: #960000;
     display: flex;
     flex-direction: column;
     border: #000 solid 3px;
@@ -82,11 +76,12 @@
 
 input {
     border: #000 solid 3px;
+    padding-left: 5px;
 }
 
 #submit {
     border: none;
-    background-color: #ffffff;
+    : #ffffff;
     height: 20px;
     width: 20%;
     text-align: center;
