@@ -1,0 +1,92 @@
+#title {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: rgb(0, 0, 0) solid 3px;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#maincontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#mainform {
+  display: flex;
+  flex-direction: column;
+}
+
+#scores {
+  width: 40%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#inputscore {
+  width: 40%;
+}
+
+.containers {
+  width: 40%;
+  padding: 30px;
+}
+
+#topscore {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#refresh {
+  border: none;
+  height: 20px;
+  width: 20%;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+
+#mainlist {
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 3px;
+}
+
+#mainform > * {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+input {
+  border: #000 solid 3px;
+  padding-left: 5px;
+}
+
+#submit {
+  border: none;
+  height: 20px;
+  width: 20%;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
