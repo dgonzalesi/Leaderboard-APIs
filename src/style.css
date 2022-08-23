@@ -5,3 +5,9 @@
 * {
     color: coral;
 }
+
+#maincontainer {
+    background-color: #4f4f4f;
+    display: flex;
+    justify-content: space-around;
+}
