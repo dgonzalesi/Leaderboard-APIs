@@ -10,7 +10,7 @@
 <body>
     <h1 id="title">Leaderboard</h1>
     <div id="maincontainer">
-        <div id="scores">
+        <div id="scores" class="containers">
             <h2 class="subtitle">Recent scores</h2>
             <ul id="mainlist">
                 <li class="score">1</li>
@@ -25,9 +25,9 @@
                 <li class="score">10</li>
             </ul>
         </div>
-        <div id="inputscore">
+        <div id="inputscore" class="containers">
             <h2 class="subtitle">Add your score</h2>
-            <form action="" method="post">
+            <form action="" method="post" id="mainform">
                 <input class="inputfield" type="text" name="name" id="playername" placeholder="Your name">
                 <input class="inputfield" type="text" name="score" id="playerscore" placeholder="Your score">
                 <input type="submit" value="Submit" id="submit">

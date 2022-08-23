@@ -1,13 +1,36 @@
 #title {
-    color: blue;
-    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: rgb(0, 0, 0) solid 3px;
 }
 * {
-    color: coral;
+    list-style: none;
 }
 
 #maincontainer {
-    background-color: #4f4f4f;
+    background-color: #de0000;
     display: flex;
     justify-content: space-around;
+}
+
+#mainform {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border: #960000 solid 1px;
+}
+
+#scores {
+    color: blueviolet;
+    width: 40%;
+}
+
+#inputscore {
+    background-color: #669860;
+    width: 40%;
+}
+
+.containers {
+    background-color: #669860;
+    width: 40%;
 }
