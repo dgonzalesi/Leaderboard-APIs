@@ -18,9 +18,8 @@ export default class Leaderboard {
       .then((response) => response.json())
       .then((data) => {
         this.currentGame = data.result.substring(13, 34);
-        console.log(this.currentGame);
       })
-      .catch(() => console.log('Error in newGame'));
+      .catch(() => new Error('Error in newPost'));
   }
 
   newPost = (name, getscore) => {
@@ -33,7 +32,7 @@ export default class Leaderboard {
     fetch(`${this.url + this.currentGame}/scores/`, option)
       .then((response) => response.json())
       .then((data) => console.log(data.result))
-      .catch(() => console.log('Error in newPost'));
+      .catch(() => new Error('Error in newPost'));
   }
 
   getScores = () => {
