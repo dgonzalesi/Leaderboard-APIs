@@ -1,5 +1,5 @@
 import './style.css';
-
+import Leaderboard from './modules/mainClass.js';
 console.log('Hello World from Webpack');
 // POST:
 // const myfunctionPOST = (url = '', data = {}) => {
@@ -11,7 +11,11 @@ console.log('Hello World from Webpack');
 //   };
 
 //   fetch(url, option)
-//     .then((response) => response.json()).then((data) => console.log(data.result));
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data.result.substring(13, 34))
+//       console.log(data.result)
+//     })
 // };
 // const dataPOST = {
 //   name: 'My cool new game Test',
@@ -20,23 +24,23 @@ console.log('Hello World from Webpack');
 
 // myfunctionPOST(url, dataPOST);
 
-const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0j4WGZsTGaiHYHiDDMYw/scores/';
-const myfunctionSCORE = (url = '', data = {}) => {
-  const option = {
-    method: 'POST',
-    mode: 'cors',
-    headers: { 'Content-type': 'application/json; charset=UTF-8' },
-    body: JSON.stringify(data),
-  };
+// const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0j4WGZsTGaiHYHiDDMYw/scores/';
+// const myfunctionSCORE = (url = '', data = {}) => {
+//   const option = {
+//     method: 'POST',
+//     mode: 'cors',
+//     headers: { 'Content-type': 'application/json; charset=UTF-8' },
+//     body: JSON.stringify(data),
+//   };
 
-  fetch(url, option)
-    .then((response) => response.json()).then((data) => console.log(data.result));
-};
+//   fetch(url, option)
+//     .then((response) => response.json()).then((data) => console.log(data.result));
+// };
 
-const dataSCORE = {
-  user: 'Juan Perez',
-  score: '99',
-};
+// const dataSCORE = {
+//   user: 'Juan Perez',
+//   score: '99',
+// };
 
 // myfunctionSCORE(game, dataSCORE);
 // myfunctionSCORE(game, dataSCORE);
@@ -45,24 +49,21 @@ const dataSCORE = {
 // myfunctionSCORE(game, dataSCORE);
 // myfunctionSCORE(game, dataSCORE);
 
-const myfunctionGET = (url = '') => {
-  // const option = {
-  //   method: 'POST',
-  //   mode: 'cors',
-  //   headers: { 'Content-type': 'application/json; charset=UTF-8' },
-  //   // body: '',
-  // };
+// const myfunctionGET = (url = '') => {
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => console.log(data.result))
+//     .catch(() => console.log('fatality error'));
+// };
 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data.result))
-    .catch(() => console.log('fatality error'));
-};
-
-myfunctionGET(game);
+// myfunctionGET(game);
 
 // const mytest = fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/').then((res) => { console.log(res.json()); }).catch((err) => { console.log(err.ok); });
 
 // POST: https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/
 // GET: https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0j4WGZsTGaiHYHiDDMYw/scores/
 // TEMPOGAME: 0j4WGZsTGaiHYHiDDMYw
+
+const leaderboard = new Leaderboard();
+
+console.log(leaderboard.currentGame);
