@@ -36,4 +36,16 @@ export default class Leaderboard {
       .catch(() => console.log('Error in newPost'));
   }
 
+  getScores = () => {
+    this.scores = [];
+    fetch(`${this.url + this.currentGame}/scores/`)
+      .then((response) => response.json())
+      .then((data) => {
+        (data.result.forEach((element) => {
+          this.scores.push(element);
+        }));
+      })
+      .catch(() => new Error('Error in getScores'));
+    return this.scores;
+  }
 }

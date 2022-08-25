@@ -2,27 +2,6 @@ import './style.css';
 import Leaderboard from './modules/mainClass.js';
 console.log('Hello World from Webpack');
 // POST:
-// const myfunctionPOST = (url = '', data = {}) => {
-//   const option = {
-//     method: 'POST',
-//     mode: 'cors',
-//     headers: { 'Content-type': 'application/json; charset=UTF-8' },
-//     body: JSON.stringify(data),
-//   };
-
-//   fetch(url, option)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data.result.substring(13, 34))
-//       console.log(data.result)
-//     })
-// };
-// const dataPOST = {
-//   name: 'My cool new game Test',
-// };
-// const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-
-// myfunctionPOST(url, dataPOST);
 
 // const game = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0j4WGZsTGaiHYHiDDMYw/scores/';
 // const myfunctionSCORE = (url = '', data = {}) => {
@@ -66,4 +45,12 @@ console.log('Hello World from Webpack');
 
 const leaderboard = new Leaderboard();
 
-console.log(leaderboard.currentGame);
+// leaderboard.newPost('Juan Perez 1', '100');
+// leaderboard.newPost('Juan Perez 2', '200');
+// leaderboard.newPost('Juan Perez 3', '300');
+// leaderboard.newPost('Juan Perez 4', '400');
+// leaderboard.newPost('Juan Perez 5', '500');
+// leaderboard.newPost('Juan Perez 6', '600');
+// leaderboard.newPost('Juan Perez 7', '700');
+
+console.log(leaderboard.getScores());
