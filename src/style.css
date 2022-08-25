@@ -9,7 +9,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: ;
 }
 
 .mainfont {
@@ -61,7 +60,7 @@
   cursor: pointer;
   color: #fff;
   font-weight: 800;
-  background-color: #333333;
+  background-color: #333;
 }
 
 .subtitle {
@@ -100,11 +99,11 @@ input {
   align-self: flex-end;
   color: #fff;
   font-weight: 800;
-  background-color: #333333;
+  background-color: #333;
 }
 
-html { 
-  background: url(./img/v748-toon-103.jpg) no-repeat center center fixed; 
+html {
+  background: url(./img/v748-toon-103.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,5 +112,5 @@ html {
 
 .player-score {
   padding: 5px 20px 5px 20px;
-  color: #333333;
+  color: #333;
 }
