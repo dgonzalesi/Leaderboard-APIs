@@ -22,4 +22,18 @@ export default class Leaderboard {
       })
       .catch(() => console.log('Error in newGame'));
   }
+
+  newPost = (name, getscore) => {
+    const option = {
+      method: 'POST',
+      mode: 'cors',
+      headers: { 'Content-type': 'application/json; charset=UTF-8' },
+      body: JSON.stringify({ user: name, score: getscore }),
+    };
+    fetch(`${this.url + this.currentGame}/scores/`, option)
+      .then((response) => response.json())
+      .then((data) => console.log(data.result))
+      .catch(() => console.log('Error in newPost'));
+  }
+
 }
