@@ -90,3 +90,11 @@ input {
   cursor: pointer;
   align-self: flex-end;
 }
+
+html { 
+  background: url(./img/v748-toon-103.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
