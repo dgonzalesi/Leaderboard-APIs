@@ -35,12 +35,12 @@ export default class Leaderboard {
 
   // GET THE DATA FROM THE API
   getScores = () => {
-    this.scores = [];
+    const scores = [];
     fetch(`${this.url + this.currentGame}/scores/`)
       .then((response) => response.json())
       .then((data) => {
         (data.result.forEach((element) => {
-          this.scores.push(element);
+          scores.push(`${element.user} ${element.score}`);
         }));
       })
       .catch(() => new Error('Error in getScores'));

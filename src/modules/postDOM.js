@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
-import { name, score } from './elementsDOM.js';
+import { name, score, submit2 } from './elementsDOM.js';
 import leaderboard from './classCall.js';
 
 const postData = () => {
-  submit.addEventListener('click', (e) => {
+  submit2.addEventListener('click', (e) => {
     e.preventDefault();
     const playerName = name.value;
     const playerScore = score.value;
@@ -12,6 +11,5 @@ const postData = () => {
     console.log(leaderboard.getScores());
   });
 };
-
 
 export default postData;
