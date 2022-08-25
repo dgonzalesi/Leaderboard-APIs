@@ -1,7 +1,7 @@
 export default class Leaderboard {
   constructor() {
     this.gameName = 'My New Game';
-    this.currentGame = 'iqwJZVwWQ0yUJPTVp5Tk';
+    this.currentGame = 'ebEAYUS8ZWyvbqSWwRJJ';
     this.url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
   }
 
@@ -17,6 +17,7 @@ export default class Leaderboard {
       .then((response) => response.json())
       .then((data) => {
         this.currentGame = data.result.substring(13, 34);
+        console.log(this.currentGame);
       })
       .catch(() => new Error('Error in newPost'));
   }
@@ -34,16 +35,9 @@ export default class Leaderboard {
   }
 
   // GET THE DATA FROM THE API
-  getScores = () => {
-    const scores = [];
-    fetch(`${this.url + this.currentGame}/scores/`)
-      .then((response) => response.json())
-      .then((data) => {
-        (data.result.forEach((element) => {
-          scores.push(`${element.user} ${element.score}`);
-        }));
-      })
-      .catch(() => new Error('Error in getScores'));
-    return this.scores;
+  async getScores() {
+    const getAPI = await fetch(`${this.url + this.currentGame}/scores/`);
+    const data = await getAPI.json();
+    return data;
   }
 }

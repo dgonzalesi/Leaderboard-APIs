@@ -7,8 +7,6 @@ const postData = () => {
     const playerName = name.value;
     const playerScore = score.value;
     leaderboard.newPost(playerName, playerScore);
-    console.log(playerName, playerScore);
-    console.log(leaderboard.getScores());
   });
 };
 
