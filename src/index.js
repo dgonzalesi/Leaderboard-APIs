@@ -1,8 +1,11 @@
 import './style.css';
-import Leaderboard from './modules/mainClass.js';
-console.log('Hello World from Webpack');
-// POST:
+import postData from './modules/manipulationDOM.js';
+// import Leaderboard from './modules/mainClass.js';
+// import { name, score } from './manipulationDOM.js';
+// // POST:
 
-const leaderboard = new Leaderboard();
+// const leaderboard = new Leaderboard();
 
-console.log(leaderboard.getScores());
+// console.log(leaderboard.getScores());
+
+postData();

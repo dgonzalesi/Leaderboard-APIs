@@ -21,7 +21,6 @@ export default class Leaderboard {
       .catch(() => new Error('Error in newPost'));
   }
 
-
   //  POST THE DATA TO THE API
   newPost = (name, getscore) => {
     const option = {
