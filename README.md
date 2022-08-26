@@ -59,6 +59,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - To all Tomorrowland performers that give me music while i'm coding.
+- Image by [Raw Pixel](http://www.rawpixel.com) on [Freepik](https://www.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_18240979.htm#query=abstract%20background&position=3&from_view=search)
 
 ## 📝 License
 
