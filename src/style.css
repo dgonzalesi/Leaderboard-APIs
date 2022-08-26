@@ -2,7 +2,8 @@
   color: #252627;
   padding: 10px;
   padding-left: 5%;
-  border-bottom: #252627 2px solid;
+  padding-top: 3%;
+  font-size: 3.4em;
 }
 
 * {
@@ -81,7 +82,6 @@
 }
 
 input {
-  border: #000 solid 3px;
   padding-left: 5px;
 }
 
@@ -113,4 +113,10 @@ html {
 .player-score {
   padding: 5px 20px 5px 20px;
   color: #333;
+}
+
+.inputfield {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
 }
