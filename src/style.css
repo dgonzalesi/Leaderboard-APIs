@@ -1,0 +1,116 @@
+#title {
+  color: #252627;
+  padding: 10px;
+  padding-left: 5%;
+  border-bottom: #252627 2px solid;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainfont {
+  font-family: 'Roboto', sans-serif;
+}
+
+#maincontainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#mainform {
+  display: flex;
+  flex-direction: column;
+}
+
+#scores {
+  width: 40%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#inputscore {
+  width: 40%;
+}
+
+.containers {
+  width: 40%;
+  padding: 30px;
+}
+
+#topscore {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#refresh {
+  border: none;
+  height: 20px;
+  width: 20%;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 800;
+  background-color: #333;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+
+#mainlist {
+  display: flex;
+  flex-direction: column;
+  border: #000 solid 3px;
+}
+
+#mainform > * {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+input {
+  border: #000 solid 3px;
+  padding-left: 5px;
+}
+
+#submit {
+  border: none;
+  height: 20px;
+  width: 23%;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  line-height: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+  color: #fff;
+  font-weight: 800;
+  background-color: #333;
+}
+
+html {
+  background: url(./img/v748-toon-103.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.player-score {
+  padding: 5px 20px 5px 20px;
+  color: #333;
+}
