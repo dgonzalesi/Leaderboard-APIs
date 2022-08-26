@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/841b60bdd5.js" crossorigin="anonymous"></script>
+    <title>My Leaderboard</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <h1 id="title" class="mainfont">Leaderboard</h1>
+    <div id="maincontainer">
+        <div id="scores" class="containers">
+            <div id="topscore">
+                <h2 class="subtitle mainfont">Recent scores</h2>
+                <button id="refresh" type="submit">Refresh</button>
+            </div>
+            <ul id="mainlist">
+            </ul>
+        </div>
+        <div id="inputscore" class="containers">
+            <h2 class="subtitle mainfont">Add your score</h2>
+            <form action="#" method="post" id="mainform">
+                <input class="inputarea inputfield" type="text" name="name" id="playername" placeholder="Your name" required>
+                <input class="inputarea inputfield" type="text" name="score" id="playerscore" placeholder="Your score" required>
+                <input class="inputarea" type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
